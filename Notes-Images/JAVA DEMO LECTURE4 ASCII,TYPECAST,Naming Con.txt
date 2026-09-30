@@ -1,0 +1,75 @@
+Topics covered: 21st Aug 2026
+
+Revision:
+	Flow of program: Input -> Process -> Output
+	Variables
+	Data Type = Type of Data
+	Primitive and Non-primitive
+	
+Code:
+	int n = 8;
+	char ch = '8';
+	String str = "8";
+		
+	System.out.println(n + 2); //10
+	System.out.println(ch + 2); // ASCII value of '8' + 2 = 58
+	System.out.println(str + 2); //82
+
+ASCII: American Standard Convention for Information Interchange
+
+Type casting:
+The type casting is the process of converting a value from a data type into another data type.
+
+It has 2 categories:
+A. Implicit -> Automatically -> Without writing any extra code -> performed by the system
+For example:
+	char ch = '0';
+	ch++;
+	System.out.println(ch); //1
+	
+B. Explicit -> Manually -> By adding extra code -> done by the developer
+For example:
+	char ch = '0';
+	System.out.println((int)ch); //48
+
+byte takes 1 byte of memory
+short takes 2 bytes of memory
+int takes 4 bytes of memory
+float takes 4 bytes of memory
+double takes 8 bytes of memory
+
+1 byte = 8 bits
+
+2 raised to 0 = 1
+2 raised to 1 = 2
+2 raised to 2 = 4
+2 raised to 3 = 8
+2 raised to 4 = 16
+2 raised to 5 = 32
+2 raised to 6 = 64
+2 raised to 7 = 128
+
+Upcasting: converting from smaller block to larger
+Downcasting: converting from larger block to smaller
+
+Note:
+In case of downcasting, there is a risk of data loss.
+
+The Naming Conventions are the rules to follow while naming a particular entity in Java.
+
+Types of cases:
+
+camel case: rateOfInterest
+pascal case: RateOfInterest
+snake case: rate_of_interest
+
+Allowed symbols are A-Z a-z 0-9 _ $
+
+Digit should NOT be in the starting of the name
+
+keywords should NOT be used as variable name
+
+The variable name must be logically meaningful.
+
+Agenda of tomorrow:
+Operators
