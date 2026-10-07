@@ -28,5 +28,6 @@ public class OperatorCheck {
         else {
             System.out.println("Invalid operator");
         }
+        sc.close();
     }
 }
