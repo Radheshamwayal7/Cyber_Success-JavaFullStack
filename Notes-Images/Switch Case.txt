@@ -1,0 +1,24 @@
+There are 4 keywords involved in switch case as:
+switch case default break
+
+Syntax:
+	
+		switch(variable)
+		{
+			case <caseValue1> : 
+				n no of LOC to execute if expression matches the caseValue 1
+			case <caseValue2> : 
+				n no of LOC to execute if expression matches the caseValue 
+			case <caseValue3> : 
+				n no of LOC to execute if expression matches the caseValue3
+			.
+			.
+			.
+			default : 
+				n no of LOC to execute if expression matches NO caseValues
+		
+		}
+		
+Bullet points
+sample codes
+if else ladder Vs switch case
