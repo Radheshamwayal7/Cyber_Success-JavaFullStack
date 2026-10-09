@@ -1,0 +1,98 @@
+Variable:
+
+The variable is a container that holds/stores a value in it.
+
+We can take multiple variables in the program but we should use only required number of variables.
+
+Sometimes, the variable is just declared i.e. only the memory is allocated but no value is provided.
+
+On the other hand side, sometimes, the variable is declared and defined i.e. the memory is allocated and also the initial value is provided.
+
+Types of variables OR Scope of variable:
+1. local variable
+2. global variable
+
+Difference between local and global variable:
+1. The global variables if not initialized but used, it givdse NO error as the JVM initializes them with default values.
+On the other hand, the local variables if not initialized but used, thn it generates error (The local variable may not have been initialized)
+
+2. We can mention access specifiers to the global variables but not to the local variables.
+
+Syntax of variable declaration:
+dataType variableName;
+
+Example of variable declaration:
+int num;
+String name;
+floar radius;
+boolean status;
+
+Syntax of variable declaration and definition:
+dataType variableName = value;
+
+Example of variable declaration and definition:
+int num = 21;
+String name = "Manisha";
+floar radius = 4.578F;
+boolean status = true;
+
+Data types = Type of data
+
+Java has 2 main types of data types:
+A. primitive
+B. non-primitive
+
+A. primitive - There are total 8 data types in this category.
+byte short int long float double boolean char
+
+B. non-primitive - Combination of primitive
+String, arrays, class, object, enum, collection
+
+combination of n characters = String = non-primitive
+
+The Operator are of different types as:
+
+Depending on type of operation-
+Arithmatic
+Relational
+Assignment
+Increment
+Decrement
+Logical
+Bitwise
+Misc
+
+Depending on no of operands-
+Unary -> 1 operand
+Binary -> 2 operands
+Ternary -> 3 operands
+
+Arithmatic operators:
+
++ plus operator and it performs addition
+- hyphen operator and it performs subtraction
+* asterisk operator and it performs multiplication
+/ slash operator and it performs division and returns quotient
+% mod  operator and it performs division and returns remainder
+
+System.out.println(7 + 5); // 12
+System.out.println(7 - 5); // 2
+System.out.println(7 * 5); // 35
+System.out.println(7 / 5); // 1
+System.out.println(7 % 5); // 2
+
+Relational operators:
+
+<  	less than
+<= 	less than or equal to
+> 	greater than
+>=	greater than or equal to
+== 	equal equal to
+!=	not equal to
+
+System.out.println(7 < 5); // false
+System.out.println(7 <= 5); // false
+System.out.println(7 > 5); // true
+System.out.println(7 >= 5); // true
+System.out.println(7 == 5); // false
+System.out.println(7 != 5); // true

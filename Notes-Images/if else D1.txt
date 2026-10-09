@@ -1,0 +1,84 @@
+Conditional/Flow control/Decision making statements:
+
+The if-else is used to check the conditions.
+
+Versions of if else:
+1. if
+2. if else
+3. if else ladder
+4. if with multiple conditions
+5. Nested if else
+6. Combination of any of above 5
+
+1. if:
+Syntax:
+				if(condition) {
+					n no of lines of code
+				}
+				
+Example:
+
+	int n = 9;
+		
+	if(n == 10) {
+		System.out.println("n is 10");
+	}
+	
+Note: When we need to execute some code if the condition is true but we don't have to do anything if the condition is giving false. In such cases, we skip else part and define only if part.
+
+2. if else:
+Syntax:
+				if(condition) {
+					n no of lines of code
+				} else {
+					n no of lines of code
+				}		
+Example:
+
+	int n = 9;
+		
+	if(n == 10) {
+		System.out.println("n is 10");
+	} else {
+		System.out.println("n is NOT 10");
+	}
+	
+Note: When we need to execute some code if the condition is true and we have separate another block if the condition is giving false. In such cases, we define if and else both the parts.
+
+3. if else ladder:
+Syntax:
+				if(condition 1) {
+					n no of lines of code
+				} else if(condition 2){
+					n no of lines of code
+				} else if(condition 3){
+					n no of lines of code
+				} 
+				.
+				.
+				.
+				.
+				else {
+					n no of lines of code
+				}		
+Example:
+
+		char alphabet = 'K';
+		
+		if(alphabet == 'A') {
+			System.out.println("Apple");
+		} else if(alphabet == 'B') {
+			System.out.println("Ball");
+		} else if(alphabet == 'C') {
+			System.out.println("Cat");
+		} else {
+			System.out.println("Java!");
+		}
+	
+Note: When we need to check the conditions one after another and for every condition we have separate block of code to execute, in such cases, we use if else ladder.
+
+Task:
+
+WAP to check which operator ch has, where ch is char variable. Perform the selected operation on a an b where a and b are 2 int values.
+
+Duration - 10 minutes - 7:15 PM

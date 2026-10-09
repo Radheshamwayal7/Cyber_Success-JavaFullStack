@@ -1,0 +1,182 @@
+Q. What is Logic?
+A. The logic is an approach to solve a problem by thinking in right direction. 
+
+Q. What is Logic building?
+A. Understanding the problem statement, realizing what the program should do to give the correct output.
+
+Q. Why it is important?
+A. The logic is independent of the syntax and can be converted easily into the code. The logic is the heart of the code which converts input into necessary output.
+
+Manual 				Automation
+
+Cashier				ATM
+Ticket counter		BookMyShow
+Chef in kitchen 	Coffee machine
+.
+.
+.
+
+
+Why Automation?
+
+1. Time saving
+2. Less efforts
+3. Cost effective
+4. Redundency
+5. Accuracy
+6. Flexibility
+7. Remote access
+8. Availability
+9. Consistency
+
+Washing machine:
+
+Input -> powder, water, clothes, user's choices
+Process -> mixing, washing, rinse, stirring, drying
+Output -> dry n clean clothes
+
+We program the machines
+
+Device drivers
+
+Pune -> Pune ST stand -> Get ticket -> Get down at Pandharpur ST stand -> Pandharpur main city -> Vithhal Mandir -> Reach at 4 AM -> Attend Aarti
+
+Ratikant has programmed me.
+
+program = set of instructions
+
+Draw a flowchart to print 1 to 10 on console.
+
+Draw a flowchart to print table of a number.
+
+Draw a flowchart to print A to Z on console.
+
+ASCII values are the unique codes assigned to eache and every character in the set by an organization. American Standard Convention for Information Interchange.
+
+Draw a flowchart to print all the numbers between 1 to 50 which are completely divisible by 5.
+
+Q. What is the Flow of program?
+A. Input -> Process -> Output
+
+That means, the output is nothing but the processed input only.
+
+The most important phase is input
+To store the input, we need the variables.
+
+Variables:
+
+The name given to the memory location.
+It acts as a container that stores the data.
+
+If we are declaring a variable then only the memory gets assigned to it. No initial value is provided.
+For example: int n;
+
+If we are declaring a variable and assigning any value to it, then it is called as the variable is declared and defined.
+For example: int n = 21;
+
+Q. In which situations, do we need declared variables?
+A. When we need to store the value but the value is unknown at the time of writing the code.
+
+There are 2 basic types of variables: local and global
+Note: It is also called as scope of a variable.
+
+Difference between local and global variable:
+
+1. The local variable is natve to the block in which it is written. Out of that block, the local variable is not recognized. Whereas the global variable is recognized all over the class as it is writtenin the class but over all the blocks.
+
+2. The local variables do NOT mention the access specifiers but the global variables do.
+
+3. The local variables do not have default values but the global variables do.
+
+Note:
+default values are the initial values given to the variable by the system.
+
+public class Car {
+
+	public String name; // global or instance variable
+	
+	public static void main(String[] args) {
+		String color; // local variable
+		
+		Car c = new Car();
+		System.out.println(c.name);//null
+		
+		System.out.println(color);//Error
+	}
+}
+
+Data types = Type or format of data
+
+Java has total 2 categories in data types:
+1. primitive or primary
+2. non-primitive or derived
+
+There are total 8 primitive data types as:
+byte short int long float double boolean char
+
+Combination of primitive = non-primitive
+String, array, class, objects, collections, enum
+
+combination of n char = String = non-primitive
+
+Syntax of variable declaration:
+dataType variableName;
+
+Example of variable declaration:
+	int num;
+	char ch;
+	String str;
+	
+Syntax of variable declaration & definition:
+dataType variableName = value;
+
+Example of variable declaration & definition:
+	int num = 21;
+	char ch = 'D';
+	String str = "android";
+	
+Memory consumption of byte: 1 byte of memory (8 bits)
+Memory consumption of short: 2 byte of memory (16 bits)
+Memory consumption of int: 4 byte of memory (32 bits)
+Memory consumption of long: 8 byte of memory (64 bits)
+Memory consumption of float: 4 byte of memory (32 bits)
+Memory consumption of double: 8 byte of memory (64 bits)
+Memory consumption of char: 2 byte of memory (16 bits)  
+Memory consumption of boolean: 1 bit
+
+Data types in Java: 
+primitive -> 8
+byte short int long float double boolean char
+
+non-primitive ->
+String, Array, class
+
+The class is a non-primitive data type in Java.
+Encapsulation: binding logically related data together
+
+class Bird {
+	name, color, tune, food, age, gender
+}
+
+public class Student {
+	
+	public String name;
+	public Address addr;
+	public int age;
+	public String email;
+}
+
+Memory consumption of byte: 1 byte of memory (8 bits)
+
+If we take a variable whose data type is "byte" then in the memory, 1 byte of space i.e. 8 bits are allocated against that variable.
+
+There are many number systems in the world.
+
+We are using decimal number system. That means, the number system that we are using contains total 10 digits 
+(0 1 2 3 4 5 6 7 8 9) The base of this number system is 10.
+
+We have binary number system. That means, the number system that contains 2 digits 0 and 1. The base of this number system is 2.
+
+We have octal number system. That means, the number system that contains 8 digits 0 1 2 3 4 5 6 7. The base of this number system is 8.
+
+We have hexa decimal number system. That means, the number system that contains 16 digits 0 1 2 3 4 5 6 7 8 9 A B C D E F. The base of this number system is 16.

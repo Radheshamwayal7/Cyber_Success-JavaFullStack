@@ -1,0 +1,119 @@
+Operators Day 2
+
+Assignment Operators:
+
+The main task of assignment operator is to assign the value to the variable.
+
+The direction of assignment is Right to Left.
+
+Assignment operators has following operators:
+
+= equal to
++= plus equal to:
+	int n = 9;
+	n+=1; //n = n + 1;
+	
+-= minus equal to
+	int m = 5;
+	int n = 6;
+	m-=n; // m = m - n;
+	System.out.println(m); // -1
+*= star equal to
+/= slash equal to
+%= mod equal to
+<<= left shift equal to
+>>= right shift equal to
+
+The Increment Operator looks like ++ and the main purpose of this operator is to increase the value of the variable by one.
+
+pre = before = prior
+post = after = later
+
+pre increment = first increase the value and then use the variable
+
+post increment = first use the variable and then increase the value
+
+++i is pre increment whereas i++ is post increment.
+
+int a = 56;
+System.out.println(++a); //57
+
+int a = 56;
+System.out.println(a++); //56
+
+The Decrement Operator looks like -- and the main purpose of this operator is to decrease the value of the variable by one.
+
+pre = before = prior
+post = after = later
+
+pre decrement = first decrease the value and then use the variable
+
+post decrement = first use the variable and then decrease the value
+
+--i is pre decrement whereas i-- is post decrement.
+
+int a = 56;
+System.out.println(--a); //55
+
+int a = 56;
+System.out.println(a--); //56
+
+The Logical Operators can think logically and take a decision.
+
+&& logical AND
+|| logical OR
+! logical NOT
+^ logical XOR
+
+Note: The AND OR are used to join the conditions.
+
+Truth table for logical AND:
+i/p1	i/p2	o/p
+true	true	true
+true	false	false
+false	true	false
+false	false	false
+
+Code:
+System.out.println(true && true); // true
+System.out.println(true && false); //false
+System.out.println(false && true); //false
+System.out.println(false && false); //false
+
+Logical OR:
+Truth table for logical OR:
+i/p1	i/p2	o/p
+true	true	true
+true	false	true
+false	true	true
+false	false	false
+
+Code:
+System.out.println(true || true); // true
+System.out.println(true || false); //true
+System.out.println(false || true); //true
+System.out.println(false || false); //false
+
+Logical NOT:
+Truth table for logical NOT:
+i/p		o/p
+true	false
+false	true
+
+Code:
+System.out.println(!false); //true
+System.out.println(!true); //false
+
+Logical XOR:
+Truth table for logical OR:
+i/p1	i/p2	o/p
+true	true	false
+true	false	true
+false	true	true
+false	false	false
+
+Code:
+System.out.println(true ^ true); // false
+System.out.println(true ^ false); //true
+System.out.println(false ^ true); //true
+System.out.println(false ^ false); //false

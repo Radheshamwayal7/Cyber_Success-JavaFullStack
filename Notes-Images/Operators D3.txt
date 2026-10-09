@@ -1,0 +1,20 @@
+The Bitwise operators operate bit by bit.
+
+The bitwise operators convert the values to binary format, then they perform the task and then the result is converted back into the decimal format.
+
+The following are the bitwise operators:
+& bitwise AND
+| bitwise OR
+^ bitwise XOR
+~ bitwise NOT: is calculated as -(n+1)
+For example:
+		byte m = -34;
+		System.out.println(~m); // 33
+		
+<< left shift:
+shifts the entire group of bits towards the left.
+
+>> right shift:
+shifts the entire group of bits towards the right.
+
+Condition = Any programming statement or expression that returns true or false.
