@@ -13,5 +13,6 @@ public class SumOfAllEven15to25 {
                 System.out.println(num);
             }
         }
+        sc.close();
     }
 }
