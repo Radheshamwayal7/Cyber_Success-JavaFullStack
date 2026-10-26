@@ -1,0 +1,942 @@
+JAVA ASSESSMENT – QUESTIONS, OPTIONS, ANSWERS & WORKING SPACE
+
+Name: ______________________________________ Date:
+______________________________________ Score: __________ / 100
+
+Instructions: Choose the correct option. Use the blank space after each
+question for working or notes.
+
+PART 1: VARIABLES, DATA TYPES & OPERATORS (Q1–Q30)
+
+Q1. Which of the following declarations will cause a compilation error
+due to illegal variable naming? A. int _score = 100; B. int $value = 50;
+C. int 1stPlace = 10; D. int total_Amount = 500;
+
+Correct Answer: C — int 1stPlace = 10 (identifiers cannot start with a digit).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q2. What is the default value of a static instance variable of type
+boolean in Java? A. true B. false C. null D. Unassigned (Compilation
+error)
+
+Correct Answer: B — false (default value of a boolean static/instance variable).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q3. Which of the following wrapper classes is NOT in the java.lang
+package by default? A. Integer B. Character C. BigInteger D. Double
+
+Correct Answer: C — BigInteger (it belongs to java.math).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q4. What is the output of System.out.println(10 + 20 + “Java” + 10 +
+20);? A. 30Java30 B. 30Java1020 C. 1020Java1020 D. 30Java30
+
+Correct Answer: B — 30Java1020 (addition happens before string concatenation).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q5. Which primitive type has the largest memory footprint in Java? A.
+float B. long C. double D. Both long and double are 8 bytes (64 bits)
+
+Correct Answer: D — Both long and double are 8 bytes (64 bits).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q6. What happens when you compile and run: char c = 0x0041;
+System.out.println(c);? A. Prints 65 B. Prints A C. Compilation error D.
+Prints 0x0041
+
+Correct Answer: B — Prints A (0x0041 represents the character 'A').
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q7. Which statement about local variables in Java is true? A. They are
+assigned default values by the JVM. B. They can have access modifiers
+like public or private. C. They must be initialized before they are
+used. D. They reside on the heap memory.
+
+Correct Answer: C — They must be initialized before they are used.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q8. What is the range of values for a standard Java byte data type? A.
+-128 to 127 B. -32768 to 32767 C. 0 to 255 D. -256 to 255
+
+Correct Answer: A — -128 to 127.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q9. Which floating-point literal is invalid? A. double d = 123.45; B.
+float f = 123.45f; C. double d = 123.45D; D. float f = 123.45;
+
+Correct Answer: D — float f = 123.45; (a float literal needs the f/F suffix).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q10. What is the output of
+System.out.println(Boolean.parseBoolean(“TRUE”));? A. true B. false C.
+TRUE D. Throws NumberFormatException
+
+Correct Answer: A — true (parseBoolean ignores letter case).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q11. Which data type should represent precise decimal values like
+currency to avoid rounding errors? A. double B. float C. BigDecimal D.
+long representing cents
+
+Correct Answer: C — BigDecimal (suitable for precise decimal arithmetic).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q12. What is the result of casting (byte) 130 assuming an 8-bit signed
+two’s complement byte? A. 130 B. -126 C. -128 D. Compilation error
+
+Correct Answer: B — -126 (casting 130 to an 8-bit signed byte gives -126).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q13. Which is a valid hexadecimal literal assignment in Java? A. int x =
+0x1A3; B. int x = #1A3; C. int x = 1A3h; D. int x = 1A3;
+
+Correct Answer: A — int x = 0x1A3;
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q14. What is the output of: char c = ‘Z’; c++; System.out.println(c);?
+A. Z B. [ C. A D. Compilation error
+
+Correct Answer: B — [ (the character after 'Z' is '[').
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q15. Which feature introduced in Java 10 allows local variable type
+inference? A. auto B. var C. let D. dynamic
+
+Correct Answer: B — var.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q16. What is the output of int x = 5; int y = ++x * x++;
+System.out.println(y);? A. 36 B. 42 C. 30 D. 35
+
+Correct Answer: A — 36 (the expression evaluates as 6 * 6).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q17. Which operator has the highest precedence among the following? A. *
+(multiplication) B. ++ (postfix increment) C. + (addition) D. =
+(assignment)
+
+Correct Answer: B — ++ (postfix increment has the highest precedence among these options).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q18. What is the result of 10 >> 2 in Java? A. 5 B. 2 C. 40 D. 2.5
+
+Correct Answer: B — 2.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q19. What is the output of -10 >>> 2? A. -3 B. 1073741821 C. -2 D. 0
+
+Correct Answer: B — 1073741821.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q20. Which expression checks whether integer n is even without using the
+modulus operator? A. (n & 1) == 0 B. (n ^ 1) == 0 C. (n | 1) == 0 D.
+n >> 1 == n / 2
+
+Correct Answer: A — (n & 1) == 0.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q21. What is the result of true || false && false? A. false B. true C.
+Compilation error D. NullPointerException
+
+Correct Answer: B — true (&& is evaluated before ||).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q22. What is the output of System.out.println(10 == 10.0);? A. false B.
+true C. Compilation error D. Runtime exception
+
+Correct Answer: B — true (10 is numerically equal to 10.0).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q23. Which assignment causes a compile-time error? A. byte b = 10; b +=
+5; B. byte b = 10; b = b + 5; C. short s = 20; s++; D. char c = ‘a’; c
++= 3;
+
+Correct Answer: B — byte b = 10; b = b + 5; (the addition result is int and needs a cast).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q24. What is the output of int a = 5; int b = 3; System.out.println(a &
+b);? A. 7 B. 1 C. 5 D. 3
+
+Correct Answer: B — 1 (5 & 3 = 1).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q25. What is the output of String s = null; System.out.println(s
+instanceof String);? A. true B. false C. NullPointerException D.
+Compilation error
+
+Correct Answer: B — false (null instanceof String is false).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q26. What does int x = (5 > 3) ? 10 : 20.5; cause? A. Evaluates to 10 B.
+Evaluates to 20.5 C. Compile-time error due to type mismatch in branches
+D. Implicitly casts 10 to 10.0
+
+Correct Answer: C — Compile-time error (the conditional expression's type is double and cannot be assigned to int without a cast).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q27. What is the output of System.out.println(5 ^ 3);? A. 6 B. 5 C. 3 D.
+0
+
+Correct Answer: A — 6 (5 ^ 3 is bitwise XOR).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q28. Which operator is used for unsigned right shift in Java? A. >>
+B. >>> C. << D. >~
+
+Correct Answer: B — >>>.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q29. What is the result of double d = 0.1 + 0.2; System.out.println(d ==
+0.3);? A. true B. false C. Compile-time error D. Runtime exception
+
+Correct Answer: B — false (0.1 + 0.2 is not exactly represented as 0.3 in binary floating point).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q30. What is the output of int x = 10; System.out.println(~x);? A. -10
+B. -11 C. 9 D. 10
+
+Correct Answer: B — -11 (~10 equals -11).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+PART 2: CONTROL FLOW (Q31–Q55)
+
+Q31. Which data type CANNOT be used as a switch selector in Java? A.
+String B. int C. double D. char
+
+Correct Answer: C — double.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q32. What is the output of the following code? int x = 10; if (x > 5) if
+(x > 15) System.out.print(“A”); else System.out.print(“B”); else
+System.out.print(“C”);
+
+A. A B. B C. C D. No output
+
+Correct Answer: B — B (else binds to the nearest unmatched if).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q33. In a switch statement, what happens if break is omitted at the end
+of a case? A. Compilation error B. Execution falls through to the next
+case automatically C. The program terminates immediately D. It skips the
+default case
+
+Correct Answer: B — Execution falls through to the next case automatically.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q34. Which is valid syntax for a Java 14+ switch expression? A. case 1
+-> System.out.println(“One”); B. case 1 : -> System.out.println(“One”);
+C. case 1 => System.out.println(“One”); D. case 1 : yield “One”;
+
+Correct Answer: A — case 1 -> System.out.println("One");
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q35. What is the output? boolean flag = false; if (flag = true) {
+System.out.println(“True”); } else { System.out.println(“False”); } A.
+True B. False C. Compilation error D. Runtime exception
+
+Correct Answer: A — True (flag = true assigns true, so the condition is true).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q36. What is the output? int val = 2; switch (val) { case 1:
+System.out.print(“1”); case 2: System.out.print(“2”); case 3:
+System.out.print(“3”); default: System.out.print(“D”); } A. 2 B. 2 3 D
+C. 2 3 D. D
+
+Correct Answer: B — 2 3 D (there are no break statements).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q37. Can a switch selector evaluate to null in Java? A. Yes, without any
+issues. B. No, it throws a NullPointerException at runtime if the
+expression is null. C. No, it is a compile-time error. D. Yes, it
+automatically executes default.
+
+Correct Answer: B — A null switch selector throws NullPointerException at runtime.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q38. What happens if a local variable declared inside an if block is
+accessed outside that block? A. Prints default value B. Returns null C.
+Compile-time error due to variable scope D. Runtime exception
+
+Correct Answer: C — Compile-time error due to variable scope.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q39. Which keyword was introduced in Java 13 to return a value from a
+switch expression block? A. return B. yield C. break D. value
+
+Correct Answer: B — yield.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q40. What is the output? int score = 85; if (score >= 90)
+System.out.print(“A”); else if (score >= 80) System.out.print(“B”); else
+if (score >= 85) System.out.print(“C”); A. A B. B C. C D. B C
+
+Correct Answer: B — B (score >= 80 matches before the next else-if).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q41. Can float or long be used as a switch selector expression in Java?
+A. Both can. B. Neither can. C. float can, long cannot. D. long can,
+float cannot.
+
+Correct Answer: B — Neither can (long and float are not valid switch selector types).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q42. What is the output? int i = 1; switch (i) { case 1:
+System.out.print(“One”); break; case 1: System.out.print(“Duplicate”);
+break; default: System.out.print(“Default”); } A. One Duplicate B. One
+C. Compile-time error (duplicate case label) D. Runtime exception
+
+Correct Answer: C — Compile-time error (duplicate case label).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q43. Which statement about nested if-else statements is true? A. An else
+pairs with the nearest preceding if that doesn’t have an else. B. An
+else is paired with the outermost if. C. Curly braces are strictly
+required for nested if-else. D. Nested if-else is prohibited in modern
+Java.
+
+Correct Answer: A — An else pairs with the nearest preceding if that has no else.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q44. What is the output? int x = 10; if (x < 5); {
+System.out.println(“Hello”); } A. Hello B. No output C. Compile-time
+error D. Runtime exception
+
+Correct Answer: A — Hello (the semicolon ends the if statement; the block runs independently).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q45. In a switch case, can case labels be expressions containing
+variables? A. Yes, any variable can be used. B. No, case labels must be
+compile-time constants (or constant expressions). C. Only final local
+variables can be used. D. Only enum constants can be used.
+
+Correct Answer: B — Case labels must be compile-time constants or constant expressions.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q46. What is the output? String day = “MONDAY”; String result = switch
+(day) { case “MONDAY”, “FRIDAY”, “SUNDAY” -> “Active”; default ->
+“Inactive”; }; System.out.println(result); A. Inactive B. Active C.
+Compile-time error D. MONDAY
+
+Correct Answer: B — Active.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q47. What happens if no case matches a switch expression and there is no
+default case? A. Compilation error B. NullPointerException is thrown C.
+The switch completes silently D. It repeats the switch check
+
+Correct Answer: A — Compilation error for a non-exhaustive switch expression without a default.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q48. Which statement about enums in switch cases is correct? A. Case
+labels must use the enum class name (e.g., Day.MONDAY). B. Do not prefix
+case labels with the enum class name (e.g., case MONDAY). C. Enums
+cannot be used in switch statements. D. Enums always require a default
+case.
+
+Correct Answer: B — Do not prefix enum case labels with the enum class name.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q49. What is the output? int a = 5, b = 10; if (a > b)
+System.out.println(“A”); else System.out.println(“B”);
+System.out.println(“C”); A. B followed by C B. B C. C D. Compile-time
+error
+
+Correct Answer: A — B followed by C.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q50. Can a switch statement contain another switch statement? A. No,
+nesting switches is illegal. B. Yes, switches can be nested arbitrarily.
+C. Only if the inner switch uses different data types. D. Only inside
+the default block.
+
+Correct Answer: B — Yes, switches can be nested.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q51. What happens if a switch expression does not cover all enum values?
+A. It compiles successfully. B. Compile-time error unless a default
+branch or exhaustive cases are provided. C. It throws MatchException at
+runtime. D. It defaults to the first enum value.
+
+Correct Answer: B — Compile-time error unless a default branch or exhaustive enum cases are provided.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q52. Which block in an if-else if-else chain is mandatory? A. Only the
+if block. B. All else-if blocks. C. The else block. D. Both if and else
+blocks.
+
+Correct Answer: A — Only the if block is mandatory.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q53. What is the output? int x = 5; if (x == 5) x = 10; else x = 15;
+System.out.println(x); A. 5 B. 10 C. 15 D. Compile-time error
+
+Correct Answer: B — 10.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q54. Can case null be used in a switch in Java? A. Yes, starting from
+Java 21 with pattern matching for switch. B. No, never. C. Yes, in all
+Java versions. D. Only for primitive types.
+
+Correct Answer: A — Yes, Java 21 pattern matching for switch supports case null.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q55. What is the output? int x = 3; switch (x) { case 1:
+System.out.println(“One”); case 2: System.out.println(“Two”); default:
+System.out.println(“Default”); } A. Default B. One Two Default C.
+Compile-time error D. No output
+
+Correct Answer: A — Default.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+PART 3: LOOPS (Q56–Q80)
+
+Q56. What is the output? int count = 0; for (int i = 0; i < 3; i++) {
+for (int j = 0; j < 3; j++) { if (i == j) break; count++; } }
+System.out.println(count); A. 3 B. 6 C. 0 D. 9
+
+Correct Answer: A — 3.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q57. Which for-each loop is valid for iterating over an integer array
+arr? A. for (int i : arr) B. for (int arr : i) C. for (i : int arr) D.
+for each (int i in arr)
+
+Correct Answer: A — for (int i : arr).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q58. How many times will this do-while loop execute? int x = 5; do {
+System.out.println(x); x–; } while (x > 5); A. 0 times B. 1 time C. 5
+times D. Infinite times
+
+Correct Answer: B — 1 time (do-while executes at least once).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q59. What is the output? int i = 0; for (System.out.print(“A”); i < 2;
+System.out.print(“B”), i++) { System.out.print(“C”); } A. ACBCB B. ACBC
+C. ABCBC D. ACAB
+
+Correct Answer: A — ACBCB.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q60. What is the purpose of a labeled break statement? A. Break out of
+the innermost loop only. B. Break out of an outer nested loop from an
+inner loop. C. Restart a loop from the beginning. D. Skip the current
+iteration.
+
+Correct Answer: B — To break out of an outer nested loop from an inner loop.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q61. What is the output? int sum = 0; for (int i = 1; i <= 5; i++) { if
+(i == 3) continue; sum += i; } System.out.println(sum); A. 15 B. 12 C. 9
+D. 10
+
+Correct Answer: B — 12 (1 + 2 + 4 + 5).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q62. What happens if the condition in a while loop is false initially?
+A. Compile-time error B. Loop body executes once C. Loop body never
+executes D. Runtime exception
+
+Correct Answer: C — Loop body never executes.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q63. Which loop is guaranteed to execute at least once? A. for loop B.
+while loop C. do-while loop D. Enhanced for-each loop
+
+Correct Answer: C — do-while loop.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q64. What is the output? for (int i = 0; i < 10; i++) { if (i % 2 == 0)
+continue; System.out.print(i + ” “); } A. 0 2 4 6 8 B. 1 3 5 7 9 C. 0 1
+2 3 4 5 6 7 8 9 D. 2 4 6 8
+
+Correct Answer: B — 1 3 5 7 9.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q65. Can you have an infinite for loop in Java? A. Yes, e.g., for (;;)
+B. No, Java for loops must have a termination condition. C. Only if
+using while. D. It requires a break statement to compile.
+
+Correct Answer: A — Yes, for (;;) creates an infinite loop.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q66. What is the scope of a variable declared in a for-loop
+initialization section? A. Accessible anywhere in the method. B.
+Accessible within the for-loop header and body. C. Accessible across all
+loops in the class. D. Accessible only after the loop completes.
+
+Correct Answer: B — Accessible within the for-loop header and body.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q67. What is the output? int i = 5; while (–i > 0) {
+System.out.print(i + ” “); } A. 5 4 3 2 1 B. 4 3 2 1 C. 5 4 3 2 D. 4 3 2
+1 0
+
+Correct Answer: B — 4 3 2 1.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q68. Which statement about continue is correct? A. It terminates the
+entire loop. B. It skips the remaining statements in the current
+iteration and proceeds to the next loop step/check. C. It can only be
+used inside switch statements. D. It causes a compilation error in a
+while loop.
+
+Correct Answer: B — It skips the remaining statements in the current iteration and proceeds to the next loop step/check.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q69. What is the output? int x = 1; for (; x <= 3; x++) {
+System.out.print(x); } A. 123 B. 1234 C. 12 D. Compile-time error
+
+Correct Answer: A — 123.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q70. Can variables of different types be declared together in a standard
+for-loop initialization clause? A. Yes, using commas. B. No, variables
+in the same declaration must share the same type. C. Yes, without
+restrictions. D. No, for loops support only one variable.
+
+Correct Answer: B — Variables in the same declaration must share the same type.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q71. What is the output? int i = 0; do { i++; if (i == 2) continue;
+System.out.print(i + ” “); } while (i < 4); A. 1 3 4 B. 2 3 4 C. 1 2 3 4
+D. 1 3
+
+Correct Answer: A — 1 3 4.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q72. What is the output? outer: for (int i = 1; i <= 2; i++) { inner:
+for (int j = 1; j <= 2; j++) { if (i == 1 && j == 1) continue outer;
+System.out.print(i + “” + j + ” “); } } A. 11 12 21 22 B. 21 22 C. 12 21
+22 D. 11 21
+
+Correct Answer: C — 12 21 22.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q73. Which loop structures can cause a compile-time error due to
+unreachable code when followed by an ordinary statement and there is no
+exit path? A. while(true) { … } followed by System.out.println(“Done”);
+B. for(;;) { … } followed by System.out.println(“Done”); C. while(false)
+{ System.out.println(“Hello”); } D. do { … } while(false);
+
+Correct Answer: A and B — Both can cause unreachable-code errors when followed by a statement and have no exit path.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q74. What is the output? int[] nums = {10, 20, 30}; for (int n : nums) {
+n = 0; } System.out.println(nums[0]); A. 0 B. 10 C. 30 D. Compile-time
+error
+
+Correct Answer: B — 10 (changing the enhanced-for loop variable does not change the array element).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q75. What is the output? int i = 0; while (i < 3) {
+System.out.print(i++); } A. 012 B. 123 C. 0123 D. 12
+
+Correct Answer: A — 012.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q76. Which keyword/value is required for an infinite while loop? A. true
+B. infinite C. loop D. forever
+
+Correct Answer: A — true.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q77. What is the output? for (int i = 0; i < 3; i++) { int x = i;
+System.out.print(x + ” “); } A. 0 1 2 B. 0 0 0 C. 2 2 2 D. Compile-time
+error
+
+Correct Answer: A — 0 1 2.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q78. Can the condition expression of a for loop be omitted? A. No, it is
+mandatory. B. Yes, it defaults to true. C. Yes, but it causes a runtime
+exception. D. Only in enhanced for-each loops.
+
+Correct Answer: B — Yes, an omitted condition defaults to true.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q79. What is the output? int x = 0; for (int i = 0; i < 5; i++) { x +=
+i; } System.out.println(x); A. 10 B. 15 C. 5 D. 0
+
+Correct Answer: A — 10 (0 + 1 + 2 + 3 + 4).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q80. What happens if break is used outside any loop or switch? A. It
+terminates the program. B. It acts as a no-op. C. It causes a
+compile-time error. D. It returns from the method.
+
+Correct Answer: C — Compile-time error.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+PART 4: METHODS (Q81–Q100)
+
+Q81. Which method signature is a valid varargs method? A. public void
+test(int… nums, String s) B. public void test(String s, int… nums) C.
+public void test(int… nums1, String… nums2) D. public void test(int
+nums…)
+
+Correct Answer: B — public void test(String s, int... nums).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q82. What is method overloading in Java? A. Same method name and
+parameter list in different classes. B. Same method name but different
+parameter lists within the same class. C. Redefining a superclass method
+in a subclass with the same signature. D. Calling a method recursively.
+
+Correct Answer: B — Same method name with different parameter lists in the same class.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q83. What is the output of the recursive method call print(3)? static
+void print(int n) { if (n == 0) return; System.out.print(n + ” “);
+print(n - 1); System.out.print(n +” “); } A. 3 2 1 1 2 3 B. 3 2 1 3 2 1
+C. 1 2 3 3 2 1 D. 3 2 1
+
+Correct Answer: A — 3 2 1 1 2 3.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q84. Which modifier cannot be applied to an abstract method? A. public
+B. protected C. private D. abstract
+
+Correct Answer: C — private.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q85. Can a method return multiple values using a standard return
+statement? A. Yes, separated by commas. B. Yes, using an array or object
+wrapper. C. No, a method returns a single value or void. D. Yes, using
+tuple syntax.
+
+Correct Answer: C — A method returns one value or void; arrays/objects can package multiple values.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q86. What is method hiding in Java? A. Declaring a static method in a
+subclass with the same signature as a static superclass method. B.
+Declaring a method as private. C. Defining a method inside an interface.
+D. Using anonymous inner classes.
+
+Correct Answer: A — Static method hiding occurs when a subclass declares a static method with the same signature.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q87. What is the output? class Test { static void change(int x) { x =
+10; } public static void main(String[] args) { int x = 5; change(x);
+System.out.println(x); } } A. 10 B. 5 C. Compile-time error D. 0
+
+Correct Answer: B — 5 (Java passes the primitive argument by value).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q88. Which statement about return types during method overloading is
+true? A. Overloaded methods must have different return types. B. They
+may have same or different return types if parameter lists differ. C.
+Overloaded methods must return void. D. Return type alone distinguishes
+overloaded methods.
+
+Correct Answer: B — Same or different return types are allowed if parameter lists differ.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q89. What happens if a recursive method lacks a proper base case? A. It
+may recurse until StackOverflowError occurs. B. Compile-time error. C.
+It executes once and returns null. D. It throws OutOfMemoryError.
+
+Correct Answer: A — It may recurse until StackOverflowError occurs.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q90. What is a method’s access level if no modifier is specified? A.
+public B. private C. protected D. Package-private (default)
+
+Correct Answer: D — Package-private (default).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q91. Can a static method directly access non-static instance variables
+without an object reference? A. Yes, always. B. No, it results in a
+compile-time error. C. Only if the variables are final. D. Only within
+main.
+
+Correct Answer: B — No, not directly; it causes a compile-time error.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q92. What is the output? class Test { static int add(int a, int b) {
+return a + b; } static double add(double a, double b) { return a + b; }
+public static void main(String[] args) { System.out.println(add(5, 10));
+} } A. 15 B. 15.0 C. Compile-time error (ambiguous method call) D.
+Runtime exception
+
+Correct Answer: A — 15 (the int overload is the best match).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q93. Which keyword defines a method that does not return a value? A.
+null B. empty C. void D. nil
+
+Correct Answer: C — void.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q94. Can a method be declared both abstract and final? A. Yes. B. No,
+they are mutually exclusive. C. Only in interfaces. D. Only in abstract
+classes.
+
+Correct Answer: B — No; abstract and final are mutually exclusive.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q95. What is the signature of the standard Java main method? A. public
+static void main(String[] args) B. public void main(String args[]) C.
+static public int main(String[] args) D. private static void
+main(String… args)
+
+Correct Answer: A — public static void main(String[] args).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q96. What is a pure/deterministic method in functional programming? A. A
+method with no side effects that returns the same result for the same
+arguments. B. A method declared with the pure keyword. C. A method that
+only modifies static fields. D. A method that returns void.
+
+Correct Answer: A — No side effects and the same result for the same arguments.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q97. How does Java pass arguments to methods? A. Pass by reference for
+objects and by value for primitives. B. Pass by value for all arguments
+(object references are also passed by value). C. Pass by reference for
+all arguments. D. Pass by pointer.
+
+Correct Answer: B — Pass by value for all arguments (object references are also passed by value).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q98. What is the output? class Test { static void test(int… a) {
+System.out.print(“Varargs”); } static void test(int a, int b) {
+System.out.print(“Fixed”); } public static void main(String[] args) {
+test(1, 2); } } A. Varargs B. Fixed C. Compile-time error D. Fixed
+Varargs
+
+Correct Answer: B — Fixed (the fixed-arity overload is preferred over varargs).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q99. Can a static method be overridden in a subclass? A. Yes, using
+@Override. B. No, static methods are hidden, not overridden. C. Yes,
+automatically. D. Only if declared final.
+
+Correct Answer: B — No; static methods are hidden, not overridden.
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+Q100. What is the maximum number of values a Java method can return
+directly using a return statement? A. 1 B. Unlimited if wrapped in a
+collection or object C. As many as specified in the throws clause D. 2
+(using pair objects)
+
+Correct Answer: A — 1 (a return statement directly returns one value; an object/collection can contain multiple values).
+Your Answer: ______ Working/Notes:
+____________________________________________________________
+____________________________________________________________
+
+ANSWER KEY (FOR SELF-CHECKING)
+
+Q1 C, Q2 B, Q3 C, Q4 B, Q5 D, Q6 B, Q7 C, Q8 A, Q9 D, Q10 A, Q11 C, Q12
+B, Q13 A, Q14 B, Q15 B, Q16 A, Q17 B, Q18 B, Q19 B, Q20 A, Q21 B, Q22 B,
+Q23 B, Q24 B, Q25 B, Q26 C, Q27 A, Q28 B, Q29 B, Q30 B, Q31 C, Q32 B,
+Q33 B, Q34 A, Q35 A, Q36 B, Q37 B, Q38 C, Q39 B, Q40 B, Q41 B, Q42 C,
+Q43 A, Q44 A, Q45 B, Q46 B, Q47 A, Q48 B, Q49 A, Q50 B, Q51 B, Q52 A,
+Q53 B, Q54 A, Q55 A, Q56 A, Q57 A, Q58 B, Q59 A, Q60 B, Q61 B, Q62 C,
+Q63 C, Q64 B, Q65 A, Q66 B, Q67 B, Q68 B, Q69 A, Q70 B, Q71 A, Q72 C,
+Q73 A and B, Q74 B, Q75 A, Q76 A, Q77 A, Q78 B, Q79 A, Q80 C, Q81 B, Q82
+B, Q83 A, Q84 C, Q85 C, Q86 A, Q87 B, Q88 B, Q89 A, Q90 D, Q91 B, Q92 A,
+Q93 C, Q94 B, Q95 A, Q96 A, Q97 B, Q98 B, Q99 B, Q100 A
+
+Notes: - Q4 has duplicated option text in the source; option B is
+correct. - Q73 has two valid answers (A and B) as written, because both
+loop forms can make the following statement unreachable when there is no
+exit path.
