@@ -1,0 +1,146 @@
+Meaning of Encapsulation: To enclose something in a container like a capsule
+
+Meaning of Encapsulation in Java:
+Binding of data together
+
+Definition of Encapsulation
+The Encapsulation is the process of binding logically related data together in a class.
+
+Q. Why to use Encapsulation?
+A. Security, Easy access and ease of carrying the data
+
+private keyword:
+
+The private keyword STOPS the access of the variables and methods outside the owner class.
+
+Note: The owner class means the class in which the variables and methods are defined.
+
+The private data of a class can be accessed by the owner class ONLY.
+
+For example:
+
+public class Coffee {
+
+	public String brand;
+	private String formula;
+	
+}
+
+public class Restaurant {
+
+	public static void main(String[] args) {
+		Coffee c = new Coffee();
+		c.brand = "Nestle"; // No error
+		c.formula = "abc xyz";
+		//Error: The field Coffee.formula is not visible
+	}
+	
+}
+
+getter method = gets the data
+
+It is the method which returns data.
+
+The getter method ALWAYS starts with the "get" and followed by the variable name.
+It uses camel case.
+For example:
+variable name = age
+its getter method = getAge
+
+variable name = salary
+its getter method = getSalary
+
+The getter method NEVER has parameters.
+
+The access specifier of getter method is ALWAYS public.
+
+setter method = sets the data
+
+It is the method which changes the data.
+
+The setter method ALWAYS starts with the "set" and followed by the variable name. It uses camel case.
+For example:
+variable name = age
+its setter method = setAge
+
+variable name = salary
+its setter method = setSalary
+
+The setter method ALWAYS has parameter.
+
+The access specifier of setter method is ALWAYS public.
+
+Q. What is the need of getter and setter method?
+A. To give access of private variable outside the owner class.
+
+Note:
+We can define getter and setter methods for ALL types of data i.e. public protected and default also.
+
+Sample code:
+
+public class Coffee {
+
+	public String brand;
+	private String formula;
+	private String taste;
+	
+	public void setTaste(String taste) {
+		this.taste = taste;
+	}
+	
+	public void setFormula(String formula) {
+		this.formula = formula;
+	}
+	
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+	
+	public String getTaste() {
+		return taste;
+	}
+	public String getBrand() {
+		return brand;
+	}
+	
+	public String getFormula() {
+		return formula;
+	}
+}
+
+
+public class Restaurant {
+
+	public static void main(String[] args) {
+		Coffee c = new Coffee();
+		
+		//c.formula = "abc xyz";
+		//System.out.println(c.formula);
+		//Error: The field Coffee.formula is not visible
+		
+		c.setFormula("abc xyz");
+		System.out.println(c.getFormula());
+	}
+	
+}
+
+Practice tasks:
+
+1. Create the following:
+public class Account {	
+	public long accNo;
+	private int ATMpin;
+}
+
+public class Bank {
+	Need to acccess ATMpin
+}
+
+2. Create the following:
+public class Darshana {	
+	private String notes;
+}
+
+public class Jagruti {
+	Need to acccess notes
+}
