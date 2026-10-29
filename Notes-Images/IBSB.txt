@@ -1,0 +1,108 @@
+Instance block -> IB ->
+Instance Initializing Block
+
+Instance = Object
+Initializing = To assign the values
+Block = { }
+
+The main purpose of IB is to initialize the global variable for newly created instance or object.
+
+The IB has more priority than the constructor, i.e. it gets executed before the constructor.
+Proof:
+public class Car {
+	
+	public String name;
+	public String color;
+	
+	{
+		System.out.println("In IB");
+	}
+	
+	public Car() {
+		System.out.println("In NP cons");
+	}
+	
+	public Car(String name) {
+		System.out.println("In P cons");
+	}
+	
+	public void showInfo() {
+		System.out.println("In showInfo method");
+	}
+}
+
+public class Garage {
+
+	public static void main(String[] args) {
+
+		Car c = new Car();
+		c.showInfo();
+	}
+}
+Output:
+In IB
+In NP cons
+In showInfo method
+
+Note:
+The IB gets called for every object or instance.
+
+Static block -> SB
+
+The main purpose of SB is to execute some abc logic once when the class is loaded into the memory.
+
+The SB has more priority than the IB, i.e. it gets executed before the IB.
+Proof:
+public class Car {
+	
+	public String name;
+	public String color;
+	
+	{
+		System.out.println("In IB");
+	}
+	
+	static
+	{
+		System.out.println("In SB");
+	}
+}
+
+public class Garage {
+
+	public static void main(String[] args) {
+
+		Car c1 = new Car();
+		Car c2 = new Car();
+		Car c3 = new Car();
+	}
+}
+Output:
+In SB
+In IB
+In IB
+In IB
+
+Note:
+The SB gets called when the class is loaded into the memory.
+
+IMP Note:
+IB can access static and non static data of the class but the SB can access only static data of the class.
+
+Proof:
+public class Car {
+	
+	public String name;
+	public static String color;
+	
+	{
+		name = "Breeza";
+		color = "Red";
+	}
+	
+	static {
+		name = "Breeza";
+		color = "Red";
+	}
+	
+}
