@@ -1,7 +1,7 @@
 package Country.india;
 
 public class Father {
-    protected String name;
+    public String name;
     {
         name = "Luffy";
     }
