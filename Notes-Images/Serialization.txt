@@ -1,0 +1,80 @@
+Q. What is Serialization?
+A. The Serialization is the process of writting object into file.
+
+Q. What is De-serialization?
+A. The De-serialization is the process of reading object from file.
+
+Q. What is the need of Serialization?
+A. For security reasons and for the easy transfers.
+
+Classes involved in Serialization:
+1. FileOutputStream: Can write anything into file
+2. ObjectOutputStream: Can write object anywhere
+
+Classes involved in De-serialization:
+1. FileInputStream: Can read anything from file
+2. ObjectInputStream: Can read object from anywhere
+
+Code for Serialization:
+package country.india;
+
+import java.io.Serializable;
+
+public class Animal implements Serializable {
+
+	public String name;
+	public String color;
+	public String type;
+
+	public Animal(String name, String color, String type) {
+		this.name = name;
+		this.color = color;
+		this.type = type;
+	}
+
+}
+
+package country.india;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+
+public class WriteObject {
+
+	public static void main(String[] args) throws Exception {
+			
+		FileOutputStream a = new FileOutputStream("E:\\amit.txt");
+		
+		ObjectOutputStream b = new ObjectOutputStream(a);
+		
+		Animal obj = new Animal("Elephant", "Black", "Pet");
+		
+		b.writeObject(obj);
+		
+		System.out.println("Object serialized...");
+		
+	}
+}
+
+Code for De-serialization:
+package country.india;
+
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+
+public class ReadObject {
+
+	public static void main(String[] args) throws Exception {
+			
+		FileInputStream a = new FileInputStream("E:\\amit.txt");
+		
+		ObjectInputStream b = new ObjectInputStream(a);
+		
+		Animal obj = (Animal) b.readObject();
+		
+		System.out.println(obj.name);
+		System.out.println(obj.color);
+		System.out.println(obj.type);
+		
+	}
+}
