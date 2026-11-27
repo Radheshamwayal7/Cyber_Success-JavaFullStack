@@ -1,11 +1,9 @@
-class EX1 {
-    protected void show(){
-        int i = 10;
-    }
-    
-}
+/**
+ * EX1
+ */
+public class EX1 {
 
-class EX2 extends  EX1{
-    EX1 e = new EX1();
-    e.show();
+    public static void main(String[] args) {
+        System.out.println("JavaCode".concat("ok"));
+    }
 }
